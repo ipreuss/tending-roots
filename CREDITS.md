@@ -1,5 +1,10 @@
 # Credits & Attributions
 
+## Early Playtesters
+
+- Anna Whaley
+- Bernd Schiffer
+
 ## Audio Assets
 
 ### Ambient Sounds

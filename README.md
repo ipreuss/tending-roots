@@ -9,7 +9,7 @@ A cozy Match-3 RPG where matching transforms energy states, not just clears tile
 ### System Requirements
 
 - [LÖVE 11.4+](https://love2d.org/) (free, open-source game framework)
-- Works on: Windows, macOS, Linux
+- Works on: Windows, macOS, Linux, Android, iOS
 
 ### How to Play
 
@@ -19,6 +19,8 @@ A cozy Match-3 RPG where matching transforms energy states, not just clears tile
    - **Windows:** Drag `M3RPG.love` onto `love.exe`, or double-click if .love is associated
    - **macOS:** Drag `M3RPG.love` onto the LÖVE app
    - **Linux:** Run `love M3RPG.love` in terminal
+   - **Android:** Install LÖVE app from Google Play, then open `M3RPG.love`
+   - **iOS:** Install LÖVE app, then open `M3RPG.love` via Files or share sheet
 
 ## About the Game
 
