@@ -7,6 +7,14 @@
 
 ## Audio Assets
 
+### Menu Music
+
+**menu_theme.wav**
+- Title: "The slow music of our breakup"
+- Author: xkeril
+- Source: https://freesound.org/people/xkeril/
+- License: Creative Commons 0 (Public Domain)
+
 ### Ambient Sounds
 
 **ambient_birds.wav**
@@ -25,36 +33,12 @@
 
 ### Musical Undertone (Stamina-Responsive Background Music)
 
-**undertone_normal_day.wav**
 - Title: "The Wild Wood"
 - Author: kaazoom
 - Source: https://pixabay.com/music/search/the%20wild%20wood/
 - License: Pixabay License (Free for commercial use, no attribution required)
-- Character: Medieval lute, Folk, active hopeful mood
 
-**undertone_normal_night.wav**
-- Title: "Smooth Waters"
-- Author: SergePavkinMusic
-- Source: https://pixabay.com/music/search/smooth%20waters/
+- Title: "Cradle of Your Soul"
+- Author: lemonmusicstudio
+- Source: https://pixabay.com/music/solo-guitar-the-cradle-of-your-soul-15700/
 - License: Pixabay License (Free for commercial use, no attribution required)
-- Character: Serene, calm, warm acoustic
-
-**undertone_exhausted_day.wav**
-- Title: "Wandering"
-- Author: Andrewkn
-- Source: https://freesound.org/people/Andrewkn/sounds/566877/
-- License: Creative Commons 0 (Public Domain)
-- Character: Atmospheric, piano-based meditation
-
-**undertone_exhausted_night.wav**
-- Title: "Deep Relaxation"
-- Author: Kevin MacLeod
-- Source: https://incompetech.com/music/royalty-free/music.html
-- License: Creative Commons Attribution 4.0 (CC-BY 4.0)
-- Character: Harp/Piano drone, 0 bpm, deep stillness
-- **Attribution Required:**
-  ```
-  "Deep Relaxation" Kevin MacLeod (incompetech.com)
-  Licensed under Creative Commons: By Attribution 4.0 License
-  http://creativecommons.org/licenses/by/4.0/
-  ```
