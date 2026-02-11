@@ -9,7 +9,7 @@
 
 ### Menu Music
 
-**menu_theme.wav**
+**menu_theme.ogg**
 - Title: "The slow music of our breakup"
 - Author: xkeril
 - Source: https://freesound.org/people/xkeril/
@@ -17,7 +17,7 @@
 
 ### Ambient Sounds
 
-**ambient_birds.wav**
+**ambient_birds.ogg**
 - Title: "estate spring 1158AM 220509_0343"
 - Author: klankbeeld
 - Source: https://freesound.org/people/klankbeeld/sounds/658353/
@@ -25,7 +25,7 @@
 - Recording Location: Sint-Michielsgestel, North Brabant, Netherlands
 - Species: Blackbird, Common Chaffinch, European Robin, Short Toed Treecreeper, Common Cuckoo
 
-**ambient_crickets.wav**
+**ambient_crickets.ogg**
 - Title: "Night Crickets 02"
 - Author: Vrymaa
 - Source: https://freesound.org/people/Vrymaa/sounds/805466/

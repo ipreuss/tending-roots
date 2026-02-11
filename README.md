@@ -4,23 +4,20 @@ A cozy Match-3 RPG where matching transforms energy states, not just clears tile
 
 ## Download
 
-**Latest Release:** [Download M3RPG.love](https://github.com/ipreuss/tending-roots/releases/latest)
+**Latest Release:** [Download from Releases](https://github.com/ipreuss/tending-roots/releases/latest)
 
 ### System Requirements
 
-- [LÖVE 11.4+](https://love2d.org/) (free, open-source game framework)
-- Works on: Windows, macOS, Linux, Android, iOS
+- **Android:** Android device (standalone APK, no extra apps needed)
+- **Desktop:** [LÖVE 11.4+](https://love2d.org/) (free, open-source game framework) — Windows, macOS, Linux
 
 ### How to Play
 
-1. Download `M3RPG.love` from the latest release
-2. Install LÖVE from https://love2d.org/
-3. Run the game:
-   - **Windows:** Drag `M3RPG.love` onto `love.exe`, or double-click if .love is associated
-   - **macOS:** Drag `M3RPG.love` onto the LÖVE app
-   - **Linux:** Run `love M3RPG.love` in terminal
-   - **Android:** Install LÖVE app from Google Play, then open `M3RPG.love`
-   - **iOS:** Install LÖVE app, then open `M3RPG.love` via Files or share sheet
+- **Android:** Download `TendingRoots-release.apk` and install (enable "Install from unknown sources" if needed)
+- **Windows:** Download `M3RPG.love`, drag onto `love.exe`, or double-click if .love is associated
+- **macOS:** Download `M3RPG.love`, drag onto the LÖVE app
+- **Linux:** Download `M3RPG.love`, run `love M3RPG.love` in terminal
+- **iOS:** Install LÖVE app, then open `M3RPG.love` via Files or share sheet
 
 ## About the Game
 
