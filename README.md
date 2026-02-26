@@ -9,14 +9,16 @@ A cozy Match-3 RPG where matching transforms energy states, not just clears tile
 ### System Requirements
 
 - **Android:** Android device (standalone APK, no extra apps needed)
-- **Desktop:** [LÖVE 11.4+](https://love2d.org/) (free, open-source game framework) — Windows, macOS, Linux
+- **Linux / Steam Deck:** Standalone AppImage (no extra software needed)
+- **Desktop (other):** [LÖVE 11.4+](https://love2d.org/) (free, open-source game framework) — Windows, macOS
 
 ### How to Play
 
 - **Android:** Download `TendingRoots-release.apk` and install (enable "Install from unknown sources" if needed)
 - **Windows:** Download `M3RPG.love`, drag onto `love.exe`, or double-click if .love is associated
 - **macOS:** Download `M3RPG.love`, drag onto the LÖVE app
-- **Linux:** Download `M3RPG.love`, run `love M3RPG.love` in terminal
+- **Linux / Steam Deck:** Download `TendingRoots.AppImage`, make executable (`chmod +x`), and run
+- **Linux (alternative):** Download `M3RPG.love`, run `love M3RPG.love` in terminal
 - **iOS:** Install LÖVE app, then open `M3RPG.love` via Files or share sheet
 
 ## About the Game
