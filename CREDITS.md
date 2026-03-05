@@ -51,12 +51,6 @@
 
 ### Musical Undertone
 
-- Title: "The Wild Wood"
-- Author: kaazoom
-- Source: https://pixabay.com/music/search/the%20wild%20wood/
-- License: Pixabay License (Free for commercial use, no attribution required)
-
-- Title: "Cradle of Your Soul"
-- Author: lemonmusicstudio
-- Source: https://pixabay.com/music/solo-guitar-the-cradle-of-your-soul-15700/
-- License: Pixabay License (Free for commercial use, no attribution required)
+- Title: "Harvest"
+- Generator: Suno V5 (AI-generated)
+- License: Suno Pro Plan (commercial use permitted, creator owns output)
