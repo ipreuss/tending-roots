@@ -84,20 +84,24 @@ Falls das Spiel bereits als Nicht-Steam-Spiel hinzugefügt wurde, den Pfad in St
 
 ---
 
-## Optional: Controller-Layout anpassen
+## Controller-Steuerung
 
-Tending Roots ist ein Touch-/Maus-basiertes Spiel. Auf dem Steam Deck funktioniert die Steuerung über das **Touchscreen** oder den **rechten Trackpad als Maus**.
+Tending Roots unterstützt native Controller-Steuerung — das Spiel erkennt automatisch, wenn ein Gamepad verwendet wird. Auf dem Steam Deck funktioniert die Steuerung direkt ohne weitere Konfiguration.
 
-Empfohlenes Layout:
+**Native Controller-Belegung:**
 
 | Eingabe | Funktion |
 |---------|----------|
-| Touchscreen | Direkte Tile-Auswahl (am natürlichsten) |
-| Rechtes Trackpad | Mauszeiger bewegen |
-| R2 (rechter Trigger) | Linksklick / Tile auswählen |
-| Start | Menü öffnen |
+| D-Pad / Linker Stick | Cursor bewegen (Board-Navigation) |
+| A | Tile auswählen / Bestätigen |
+| B | Auswahl aufheben / Dialog überspringen |
+| Start | Menü / Einstellungen öffnen |
 
-Um ein eigenes Layout zu konfigurieren:
+Alternativ funktionieren auch **Touchscreen** (direkte Tile-Auswahl) und **rechtes Trackpad als Maus** — das Spiel wechselt automatisch zwischen den Eingabemodi.
+
+### Optional: Controller-Layout anpassen
+
+Falls eine eigene Belegung gewünscht wird:
 
 1. Im Gaming Mode → Tending Roots auswählen
 2. **Controller-Symbol** (rechts) → **Layout bearbeiten**
