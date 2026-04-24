@@ -1,13 +1,14 @@
 # Tending Roots auf dem Steam Deck installieren
 
-Tending Roots läuft auf dem Steam Deck als AppImage — ohne zusätzliche Software.
+Tending Roots läuft auf dem Steam Deck als AppImage — eingerichtet über ein einmaliges Setup-Skript, das den Namen "Tending Roots" und die Bibliotheksbilder direkt in Steam einträgt.
 
 ## Kurzanleitung
 
-1. AppImage von [GitHub Releases](https://github.com/ipreuss/tending-roots/releases/latest) herunterladen
-2. Ausführbar machen (`chmod +x`)
-3. Als Nicht-Steam-Spiel hinzufügen
-4. Im Gaming Mode spielen
+1. `TendingRoots-SteamDeck-<version>.tar.gz` von [GitHub Releases](https://github.com/ipreuss/tending-roots/releases/latest) herunterladen
+2. Entpacken (Doppelklick in Dolphin oder `tar xzf ...`)
+3. Steam vollständig schliessen
+4. `./setup-steam-deck.sh` einmalig ausführen
+5. Steam neu starten → Tending Roots erscheint in der Bibliothek mit Name und Artwork
 
 ---
 
@@ -17,70 +18,90 @@ Tending Roots läuft auf dem Steam Deck als AppImage — ohne zusätzliche Softw
 
 - **Steam-Taste** drücken → **Ein/Aus** → **Zum Desktop wechseln**
 
-### 2. AppImage herunterladen
+### 2. Setup-Tarball herunterladen
 
 - Im Desktop Mode den **Browser** öffnen (Firefox ist vorinstalliert)
 - Zu den [Tending Roots Releases](https://github.com/ipreuss/tending-roots/releases/latest) navigieren
-- `TendingRoots.AppImage` herunterladen
+- `TendingRoots-SteamDeck-<version>.tar.gz` herunterladen
 - Die Datei landet standardmäßig in `~/Downloads/`
 
-### 3. Ausführbar machen
+### 3. Entpacken
 
 **Option A: Per Dateimanager (Dolphin)**
 
-1. Dolphin öffnen → zu `Downloads` navigieren
-2. Rechtsklick auf `TendingRoots.AppImage` → **Eigenschaften**
-3. Reiter **Berechtigungen** → Haken bei **Ist ausführbar** setzen
-4. Schließen
+Rechtsklick auf die `.tar.gz`-Datei → **Archiv extrahieren** → **Extrahieren hier**. Es entsteht ein Ordner `tending-roots-steam-deck/`.
 
 **Option B: Per Terminal (Konsole)**
 
 ```bash
-chmod +x ~/Downloads/TendingRoots.AppImage
+cd ~/Downloads
+tar xzf TendingRoots-SteamDeck-*.tar.gz
+cd tending-roots-steam-deck
 ```
 
-### 4. Testen ob es läuft
+### 4. Steam schliessen
 
-Doppelklick auf `TendingRoots.AppImage` im Dateimanager — oder im Terminal:
+**Wichtig:** Das Setup-Skript schreibt in Steams Konfigurationsdateien. Steam muss komplett geschlossen sein, sonst überschreibt Steam die Änderungen beim Beenden.
+
+- Steam-Taste → **Steam beenden** (falls noch geöffnet)
+
+### 5. Setup-Skript ausführen
+
+**Option A: Per Dateimanager (Dolphin)**
+
+1. Dolphin öffnen → zum entpackten Ordner `tending-roots-steam-deck/` navigieren
+2. Rechtsklick auf `setup-steam-deck.sh` → **Ausführen** (oder Doppelklick, wenn Ausführungs-Rechte gesetzt sind)
+
+**Option B: Per Terminal (Konsole)**
 
 ```bash
-~/Downloads/TendingRoots.AppImage
+cd ~/Downloads/tending-roots-steam-deck
+./setup-steam-deck.sh
 ```
 
-Das Spiel sollte direkt starten. Wenn es funktioniert, weiter mit Schritt 5.
+Das Skript:
+- Legt einen "Tending Roots"-Eintrag in Steam an (kein manuelles "Nicht-Steam-Spiel hinzufügen" nötig)
+- Kopiert Capsule- und Header-Artwork in Steams Bibliotheks-Ordner
+- Installiert eine `.desktop`-Verknüpfung
 
-### 5. Als Nicht-Steam-Spiel hinzufügen
+Zum Abschluss erscheint: *"Fertig. Starte Steam neu, damit Tending Roots in der Bibliothek erscheint."*
 
-Damit das Spiel im Gaming Mode erscheint:
+### 5b. Option B — Manueller Weg (Fallback, falls Setup-Skript fehlschlägt)
 
-1. **Steam** im Desktop Mode öffnen
-2. Menü: **Spiele** → **Ein Nicht-Steam-Spiel meiner Bibliothek hinzufügen...**
-3. Auf **Durchsuchen...** klicken
-4. Unten rechts den Dateifilter von "Desktop-Dateien" auf **Alle Dateien** umstellen
-5. Zu `Downloads` navigieren und `TendingRoots.AppImage` auswählen
-6. **Öffnen** → **Ausgewählte Programme hinzufügen**
+Sollte das Skript aus irgendeinem Grund nicht laufen, kann das Spiel weiterhin manuell als Nicht-Steam-Spiel hinzugefügt werden:
+
+1. `TendingRoots.AppImage` aus dem entpackten Ordner ausführbar machen: `chmod +x TendingRoots.AppImage`
+2. **Steam** im Desktop Mode öffnen
+3. Menü: **Spiele** → **Ein Nicht-Steam-Spiel meiner Bibliothek hinzufügen...**
+4. Auf **Durchsuchen...** klicken
+5. Unten rechts den Dateifilter von "Desktop-Dateien" auf **Alle Dateien** umstellen
+6. Zum entpackten Ordner navigieren und `TendingRoots.AppImage` auswählen
+7. **Öffnen** → **Ausgewählte Programme hinzufügen**
+
+Bei dieser Variante fehlen Name und Bibliotheksbilder — sie können manuell über den Bibliotheks-Eintrag (Rechtsklick → **Eigenschaften**) gesetzt werden.
 
 ### 6. Zurück zum Gaming Mode
 
 - Doppelklick auf **Return to Gaming Mode** auf dem Desktop
-- Tending Roots erscheint jetzt in der Bibliothek unter **Nicht-Steam**
+- Tending Roots erscheint jetzt in der Bibliothek mit Name und Artwork
 
 ---
 
-## Optional: AppImage an einen besseren Ort verschieben
+## Optional: Setup-Ordner an einen besseren Ort verschieben
 
 `~/Downloads/` wird leicht unübersichtlich. Besserer Speicherort:
 
 ```bash
 mkdir -p ~/Games
-mv ~/Downloads/TendingRoots.AppImage ~/Games/
+mv ~/Downloads/tending-roots-steam-deck ~/Games/
 ```
 
-Falls das Spiel bereits als Nicht-Steam-Spiel hinzugefügt wurde, den Pfad in Steam aktualisieren:
+**Skript erneut ausführen, um den Eintrag zu aktualisieren** — das Skript erkennt den geänderten Pfad automatisch und aktualisiert den bestehenden Bibliotheks-Eintrag ohne Duplikat:
 
-1. Steam → Bibliothek → Rechtsklick auf **TendingRoots** → **Eigenschaften**
-2. Im Feld **Ziel** den neuen Pfad eintragen: `/home/deck/Games/TendingRoots.AppImage`
-3. Im Feld **Startverzeichnis** eintragen: `/home/deck/Games/`
+```bash
+cd ~/Games/tending-roots-steam-deck
+./setup-steam-deck.sh
+```
 
 ---
 
@@ -111,19 +132,19 @@ Falls eine eigene Belegung gewünscht wird:
 
 ## Update auf neue Version
 
-1. Neue `TendingRoots.AppImage` von den [Releases](https://github.com/ipreuss/tending-roots/releases/latest) herunterladen
-2. Alte Datei ersetzen (gleicher Dateiname → gleicher Pfad)
-3. Ausführbar machen nicht vergessen: `chmod +x TendingRoots.AppImage`
-4. Steam-Eintrag muss nicht angepasst werden (solange der Pfad gleich bleibt)
+1. Neuen `TendingRoots-SteamDeck-<version>.tar.gz` von den [Releases](https://github.com/ipreuss/tending-roots/releases/latest) herunterladen
+2. Entpacken über den alten Ordner (oder daneben)
+3. `./setup-steam-deck.sh` erneut ausführen — der Eintrag wird in-place aktualisiert, Bibliotheks-Artwork ebenfalls
+4. Steam neu starten
 
 ---
 
 ## Fehlerbehebung
 
-### "Permission denied" beim Starten
+### "Permission denied" beim Starten von `setup-steam-deck.sh`
 
 ```bash
-chmod +x ~/Downloads/TendingRoots.AppImage
+chmod +x setup-steam-deck.sh
 ```
 
 ### AppImage startet nicht (FUSE-Fehler)
@@ -131,7 +152,7 @@ chmod +x ~/Downloads/TendingRoots.AppImage
 Ältere SteamOS-Versionen haben eventuell kein FUSE installiert. Workaround:
 
 ```bash
-~/Downloads/TendingRoots.AppImage --appimage-extract-and-run
+./TendingRoots.AppImage --appimage-extract-and-run
 ```
 
 Oder FUSE nachinstallieren (benötigt `passwd` für den deck-User):
@@ -142,11 +163,19 @@ sudo pacman -S fuse2
 sudo steamos-readonly enable
 ```
 
+### Setup-Skript meldet "Steam läuft noch"
+
+Steam ist noch aktiv. Komplett beenden (nicht nur Fenster schliessen):
+
+- Steam-Taste → **Steam beenden**, oder im Desktop Mode Systray-Symbol → **Beenden**
+
+Danach das Skript erneut starten.
+
 ### Spiel erscheint nicht im Gaming Mode
 
-- Prüfe ob der Steam-Eintrag korrekt ist (Schritt 5)
-- Prüfe ob der Pfad zum AppImage stimmt (besonders nach Verschieben)
-- Steam neu starten: Im Desktop Mode Steam beenden und neu öffnen
+- Prüfe ob das Setup-Skript erfolgreich lief (keine Fehlermeldung am Ende)
+- Steam wirklich beenden und neu starten — ein Library-Reload reicht oft nicht
+- Bei bestehendem (manuell angelegtem) Nicht-Steam-Eintrag: `./setup-steam-deck.sh` räumt veraltete Einträge automatisch auf; erneut ausführen
 
 ### Touchscreen reagiert nicht
 
