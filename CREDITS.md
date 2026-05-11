@@ -53,6 +53,15 @@
   - License: Pixabay License (Free for commercial use, no attribution required)
 
 <!-- AUDIO_CREDITS_START -->
+### Field SFX
+
+- Title: "rain light on ground and leaves closeup"
+  - Author: kyles
+  - Source: https://freesound.org/people/kyles/sounds/451151/
+  - License: Creative Commons 0 (Public Domain)
+<!-- AUDIO_CREDITS_END -->
+
+<!-- AUDIO_CREDITS_START -->
 ### Musical Undertone
 
 - Title: "Harvest"
