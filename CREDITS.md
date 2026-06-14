@@ -68,3 +68,11 @@
   - Generator: Suno V5 (AI-generated)
   - License: Suno Pro Plan (commercial use permitted, creator owns output)
 <!-- AUDIO_CREDITS_END -->
+
+<!-- AUDIO_CREDITS_START -->
+### Stille Ader Klangraum
+
+- Title: "An der Stillen Ader"
+  - Generator: Suno V5 (AI-generated)
+  - License: Suno Pro Plan (commercial use permitted, creator owns output)
+<!-- AUDIO_CREDITS_END -->
