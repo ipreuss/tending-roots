@@ -6,20 +6,16 @@ A cozy Match-3 RPG where matching transforms energy states, not just clears tile
 
 **Latest Release:** [Download from Releases](https://github.com/ipreuss/tending-roots/releases/latest)
 
-### System Requirements
+**Standalone — no extra software needed:**
 
-- **Android:** Android device (standalone APK, no extra apps needed)
-- **Linux / Steam Deck:** Standalone AppImage (no extra software needed)
-- **Desktop (other):** [LÖVE 11.4+](https://love2d.org/) (free, open-source game framework) — Windows, macOS
-
-### How to Play
-
+- **Windows:** Download `TendingRoots_x64.zip`, unzip it, and double-click `TendingRoots.exe`. (Windows may warn about an "unknown publisher" — click *More info → Run anyway*; the game is unsigned.)
+- **Linux / Steam Deck:** Download `TendingRoots.AppImage`, make it executable (`chmod +x`), and run — [Steam Deck Guide](STEAM_DECK_INSTALL.md)
 - **Android:** Download `TendingRoots-release.apk` and install (enable "Install from unknown sources" if needed)
-- **Windows:** Download `M3RPG.love`, drag onto `love.exe`, or double-click if .love is associated
-- **macOS:** Download `M3RPG.love`, drag onto the LÖVE app
-- **Linux / Steam Deck:** Download `TendingRoots.AppImage`, make executable (`chmod +x`), and run — [Steam Deck Guide](STEAM_DECK_INSTALL.md)
-- **Linux (alternative):** Download `M3RPG.love`, run `love M3RPG.love` in terminal
-- **iOS:** Install LÖVE app, then open `M3RPG.love` via Files or share sheet
+
+**Requires [LÖVE 11.4+](https://love2d.org/)** (free, open-source game framework):
+
+- **macOS:** Download `M3RPG.love` and drag it onto the LÖVE app
+- **Other (iOS, other Linux):** Download `M3RPG.love` and open it with LÖVE (`love M3RPG.love`)
 
 ## About the Game
 
