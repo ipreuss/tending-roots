@@ -4,7 +4,7 @@ Tending Roots läuft auf dem Steam Deck als AppImage — eingerichtet über ein 
 
 ## Kurzanleitung
 
-1. `TendingRoots-SteamDeck-<version>.tar.gz` von [GitHub Releases](https://github.com/ipreuss/tending-roots/releases/latest) herunterladen
+1. `TendingRoots-<version>-SteamDeck.tar.gz` von [GitHub Releases](https://github.com/ipreuss/tending-roots/releases/latest) herunterladen
 2. Entpacken (Doppelklick in Dolphin oder `tar xzf ...`)
 3. Steam vollständig schliessen
 4. `./setup-steam-deck.sh` einmalig ausführen
@@ -22,7 +22,7 @@ Tending Roots läuft auf dem Steam Deck als AppImage — eingerichtet über ein 
 
 - Im Desktop Mode den **Browser** öffnen (Firefox ist vorinstalliert)
 - Zu den [Tending Roots Releases](https://github.com/ipreuss/tending-roots/releases/latest) navigieren
-- `TendingRoots-SteamDeck-<version>.tar.gz` herunterladen
+- `TendingRoots-<version>-SteamDeck.tar.gz` herunterladen
 - Die Datei landet standardmäßig in `~/Downloads/`
 
 ### 3. Entpacken
@@ -35,7 +35,7 @@ Rechtsklick auf die `.tar.gz`-Datei → **Archiv extrahieren** → **Extrahieren
 
 ```bash
 cd ~/Downloads
-tar xzf TendingRoots-SteamDeck-*.tar.gz
+tar xzf TendingRoots-*-SteamDeck.tar.gz
 cd tending-roots-steam-deck
 ```
 
@@ -132,7 +132,7 @@ Falls eine eigene Belegung gewünscht wird:
 
 ## Update auf neue Version
 
-1. Neuen `TendingRoots-SteamDeck-<version>.tar.gz` von den [Releases](https://github.com/ipreuss/tending-roots/releases/latest) herunterladen
+1. Neuen `TendingRoots-<version>-SteamDeck.tar.gz` von den [Releases](https://github.com/ipreuss/tending-roots/releases/latest) herunterladen
 2. Entpacken über den alten Ordner (oder daneben)
 3. `./setup-steam-deck.sh` erneut ausführen — der Eintrag wird in-place aktualisiert, Bibliotheks-Artwork ebenfalls
 4. Steam neu starten
